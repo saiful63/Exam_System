@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 $con=mysqli_connect("localhost","root","","exam");
 ?>
 
@@ -14,7 +14,8 @@ include("functions/functions.php");
 ?>
 <?php
 if(!isset($_SESSION['user_email'])){
-  header('location:index.php');
+  //header('location:index.php');
+  echo"<script>window.open('index.php','_self')</script>";
 }
 ?>
 

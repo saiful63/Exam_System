@@ -38,8 +38,23 @@ if(!isset($_SESSION['user_email'])){
     ?>
 
      <div class="container">
+      
         <div class="row">
-            <div class="col-12">
+        <div class="card col-4">
+          
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item allumni_side3"><a href="exam_controller.php">Home</a></li>
+
+            <li class="list-group-item allumni_side3"><a href="manage_student.php">Manage Student</a></li>
+            <li class="list-group-item allumni_side3"><a href="assign_teacher.php">Assign Teacher</a></li>
+            <li class="list-group-item allumni_side3"><a href="student_attendance.php">Student Attendance</a></li>
+             <li class="list-group-item allumni_side3"><a href="logout.php">Logout</a></li>
+             <?php
+              
+             ?>
+          </ul>
+        </div>
+            <div class="col-8">
                 <div class="payment-of-tax">
                     <h2>Teacher invigilation List</h2>
                     <div class="table-responsive">
@@ -97,13 +112,9 @@ if(!isset($_SESSION['user_email'])){
                                     ?></td>
                                     <?php
                                 }else{
-                                    // for($tablerow=1;$tablerow<=$i;$tablerow++){
-                                    //     echo"<tr>";
-                                    //     for($tablecolumn=1;$tablecolumn<=1;$tablecolumn++){
+                                 
                                          echo"<td>"."</td>";
-                                    //     }
-                                    //     echo"</tr>";
-                                    // }
+                                  
                                 }
                                 ?>
                                
@@ -119,7 +130,7 @@ if(!isset($_SESSION['user_email'])){
                              
                                 
                             </tbody>
-    <?
+    <?php
      }
      $i=0;
      }
@@ -127,37 +138,7 @@ if(!isset($_SESSION['user_email'])){
     ?>
   
                         </table>
-    <?php
-   
-   
-
-    // $i=0;
-    //      foreach($datas as $data){
-    //         echo $data['teacher']."&nbsp";
-    //          $i++;
-    //      }
-
-
-
-
-    //    $i=0;
-    //                                     foreach($datas as $key=>$value){
-                                        
-    //                                     if(isset($datas[$key+1])){
-    //                                         if($row_inv['teacher']==$datas[$key+1]){
-                                                
-    //                                         }else{
-    //                                             echo $datas[$i][$key+1];
-    //                                         }
-    //                                         $i++;
-    //                                         }
-    //                                     }
-        
-        ?> 
-    <?php
-    // echo"<pre>";
-    // print_r($datas);
-    ?>
+ 
                     </div>
                 </div>
             </div>

@@ -1,9 +1,5 @@
 <?php
-
-session_start();
-
-include("includes/connection.php");
-
+//$con=mysqli_connect("localhost","id20707004_exam_me","yRL_<*(F17-Mx%x2","id20707004_exam");
 if(isset($_POST['login'])){
 	$email=htmlentities(mysqli_real_escape_string($con,$_POST['email']));
 	$pass=htmlentities(mysqli_real_escape_string($con,$_POST['pass']));
@@ -23,10 +19,10 @@ if(isset($_POST['login'])){
 	    
 	
 		if($user_t['user_type']==2 && $va==2){
-			header('location:exam_controller.php');
+			echo"<script>window.open('exam_controller.php','_self')</script>";
 		}
 		else if($user_t['user_type']==3 && $va==3){
-			header('location:teacher.php');
+			echo"<script>window.open('teacher.php','_self')</script>";
 		}else if($user_t['user_type']==1 && $va==1){
         /* after successfull login control is transfer to home.php that is interface of student*/
 		echo"<script>window.open('home.php','_self')</script>";
@@ -38,5 +34,4 @@ if(isset($_POST['login'])){
 	}
 
 }
-
 ?>

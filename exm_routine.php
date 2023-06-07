@@ -1,5 +1,6 @@
 <?php
 session_start();
+error_reporting(0);
 
 include("includes/connection.php");
 
@@ -77,7 +78,7 @@ if(!isset($_SESSION['user_email'])){
     $pair = explode("/", $row['course']);
     $value = $pair[1];
     ?>
-    <tr data-stud="<?php echo $row['student_id'];?>">
+    <tr data-stud="<?php echo $row['student_id']?> " >
       
     
     

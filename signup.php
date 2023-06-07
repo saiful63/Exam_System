@@ -11,63 +11,23 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!--Bootstrap 5-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--custom css-->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 
-	<style type="text/css">
-		
-		body{
-			overflow-x: hidden;
-		}
-
-		.main-content{
-			width: 50%;
-			height: 100%;
-			margin: 10px auto;
-			background-color: #fff;
-			border:2px solid #e6e6e6;
-			padding: 40px 50px; 
-		}
-
-		.header{
-			border:0px solid #000;
-			margin-bottom: 5px;
-		}
-
-		.well{
-			background-color: #187FAB;
-		}
-
-		#signup{
-			width: 119%;
-			border-radius: 30px;
-		}
-	</style>
-
-	<script type="text/javascript">
-
-
-
- 
-</script>
 </head>
 <body>
 
 
-
 <div class="row">
-	
-	
-
-</div>
-
-<div class="row">
-	<div class="col-sm-12">
-		<div class="main-content">
+	<div class="col-lg-6 col-md col-sm col-12 container">
+		<div class="sign_text">
 			<div class="header">
 				<h3 style="text-align: center;"><strong>Join into the portal</strong></h3><hr>
 			</div>
 
-			<div class="l-part">
+			<div class="">
 				<form action="signup.php" method="post" enctype="multipart/form-data">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
@@ -132,24 +92,7 @@
 						<input id="id1" type="text" class="form-control" placeholder="Student Id" name="u_id">
 					</div><br>
 
-					<!-- <div class="input-group">
-						<span class="input-group-addon"><i class="glyphicon glyphicon-chevron-down"></i></span>
-						<select id="sm" class="form-control input-md" name="u_sem" required="required">
-							<option>Semester</option>
-							<option>Y-1,T-1</option>
-							<option>Y-1,T-2</option>
-							<option>Y-2,T-1</option>
-							<option>Y-2,T-2</option>
-							<option>Y-3,T-1</option>
-							<option>Y-3,T-2</option>
-							<option>Y-4,T-1</option>
-							<option>Y-4,T-2</option>
-							
-						</select>
-					</div><br> -->
-
-
-                     <div class="input-group">
+				    <div class="input-group">
 						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 						<input id="ps" type="text" class="form-control" placeholder="Position(Lecturer or else)" name="u_pos">
 					</div><br>
@@ -182,7 +125,7 @@
 
 
 			      <div class="input-group" id="sbm">
-					<a style="text-decoration: none;float: right;color: #187FAB;" data-toggle="tooltip" title="Signin"  href="index.php">Already have an account?</a><br>
+					<a style="text-decoration: none;float: right;color: #187FAB;" data-toggle="tooltip" title="Signin"  href="index.php">Already have an account?</a>
 
 					<center><input type="submit" id="signup" class="btn btn-info btn-sm ml-5" name="sign_up"></center>
 
@@ -198,9 +141,7 @@
 	</div>
 </div>
 
-<script type="text/javascript" src="js/custom.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
 
-<script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

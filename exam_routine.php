@@ -45,6 +45,7 @@ if(!isset($_SESSION['user_email'])){
             Featured
           </div>
           <ul class="list-group list-group-flush">
+             <li class="list-group-item allumni_side3"><a href="exam_controller.php">Home</a></li>
             <li class="list-group-item allumni_side3"><a href="manage_student.php">Manage Student</a></li>
             <li class="list-group-item allumni_side3"><a href="assign_teacher.php">Assign Teacher</a></li>
             <li class="list-group-item allumni_side3"><a href="teacher_invigilation.php">Teacher Invigilation</a></li>

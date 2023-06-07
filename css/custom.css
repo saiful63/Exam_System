@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url('../images/bg-2.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.main_text {
+    background-color: whitesmoke;
+    margin-top: 80px;
+    padding: 100px;
+}
+
+
+
+.pr1{
+  color: black;
+}
+
+/* Signup */
+
+.sign_text {
+    background-color: whitesmoke;
+    margin-top: 40px;
+    padding: 60px;
+}
+
+
+/* Login */
+
+
+#signin{
+  width: 30%;
+  border-radius: 30px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:992px){
+  .main_text {
+    
+    padding: 60px;
+  }
+}
+
+@media screen and (max-width:768px){
+  .main_text {
+    
+    padding: 40px;
+  }
+}
+
+
+@media screen and (max-width:492px){
+  .main_text {
+    margin-top: 56px;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width:400px){
+  .main_text {
+    padding: 12px;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:366px){
+  .main_text {
+    margin-top: 20px;
+    padding: 5px;
+  }
+}
+
+
