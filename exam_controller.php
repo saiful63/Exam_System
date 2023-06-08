@@ -36,7 +36,7 @@ if(!isset($_SESSION['user_email'])){
         $se_var='Exam-Controller';
      }
     ?>
-    <h1  class="b_hf">Welcome <?php echo $se_var?> in your Dashboard.</h1>
+    
     <div class="container mt-4 ">
     <div class="row bg-white b_containr">
       <div class="col-md-4 b_h1">

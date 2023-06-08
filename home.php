@@ -41,7 +41,7 @@ if(!isset($_SESSION['user_email'])){
      $name=$f_name.' '.$l_name;
     ?>
   
-    <h1  class="b_hf">Welcome <?php echo  $name?> in your Dashboard.</h1>
+ 
     <div class="container mt-4 ">
     <div class="row bg-white b_containr">
       <div class="col-md-4 b_h1">

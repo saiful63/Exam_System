@@ -41,7 +41,6 @@ if(!isset($_SESSION['user_email'])){
      $desired_date=date("Y-m-d");
     ?>
   
-    <h1  class="b_hf">Welcome <?php echo  $name?> in your Dashboard.</h1>
     
     <div class="container mt-4 ">
     <div class="row bg-white b_containr">
@@ -51,7 +50,7 @@ if(!isset($_SESSION['user_email'])){
             Featured
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
+           
              
              <li class="list-group-item allumni_side3"><a href="logout.php">Logout</a></li>
           </ul>

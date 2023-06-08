@@ -36,7 +36,7 @@ if(!isset($_SESSION['user_email'])){
         $se_var='Exam-Controller';
      }
     ?>
-    <h1  class="b_hf">Welcome <?php echo $se_var?> in your Dashboard.</h1>
+   
     <div class="container mt-4 ">
     <div class="row bg-white b_containr">
       <div class="col-md-4 b_h1">
@@ -47,9 +47,12 @@ if(!isset($_SESSION['user_email'])){
           <ul class="list-group list-group-flush">
             <li class="list-group-item allumni_side3"><a href="exam_controller.php">Home</a></li>
 
-            <li class="list-group-item allumni_side3"><a href="manage_student.php">Manage Student</a></li>
+            
             <li class="list-group-item allumni_side3"><a href="assign_teacher.php">Assign Teacher</a></li>
+            <li class="list-group-item allumni_side3"><a href="teacher_invigilation.php">Teacher Invigilation</a></li>
             <li class="list-group-item allumni_side3"><a href="student_attendance.php">Student Attendance</a></li>
+            <li class="list-group-item allumni_side3"><a href="exam_routine.php">Exam Routine</a></li>
+            <li class="list-group-item allumni_side3"><a href="automated_a.php">See Automated Attendance</a></li>
              <li class="list-group-item allumni_side3"><a href="logout.php">Logout</a></li>
              <?php
               
