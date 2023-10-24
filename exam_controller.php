@@ -75,7 +75,8 @@ if(!isset($_SESSION['user_email'])){
 						<select id="sem"class="form-control" name="u_sem" required="required">
 							<option value="">Semester</option>
 							 <?php
-                $query="select * from course order by semester";
+                //$query="select * from course order by semester";
+                $query="select user_type,course_detail,semester from course group by semester";
                 $result=$con->query($query);
                 if($result->num_rows>0){
                   while($row=$result->fetch_assoc()){
